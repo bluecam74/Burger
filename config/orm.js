@@ -1,14 +1,14 @@
 var connection = require("../config/connection.js");
  
-function printQuestionMarks(num) {
-    var arr = [];
+// function printQuestionMarks(num) {
+//     var arr = [];
   
-    for (var i = 0; i < num; i++) {
-      arr.push("?");
-    }
+//     for (var i = 0; i < num; i++) {
+//       arr.push("?");
+//     }
   
-    return arr.toString();
-  }
+//     return arr.toString();
+//   }
 
   function objToSql(ob) {
     var arr = [];
@@ -35,17 +35,20 @@ var orm = {
         }); 
     },
     insertOne: function(x, cb) {
-        var queryString = "INSERT INTO burgers burger_name, devoured VALUES (" + printQuestionMarks(vals.length) + "), false;";
-        console.log(queryString);
-        connection.query(queryString, x, function(err, result) {
+        var queryString = "INSERT INTO burgers SET ?";
+        connection.query(queryString, {
+            burger_name: x.burger_name,
+            devoured: false
+         }, 
+          function(err, result) {
             if (err) {throw err};
             cb(result);
         });
     },
-    updateOne: function(x, cb) {
-        var queryString = "UPDATE burgers SET devoured = true WHERE burger_name" + x +";";
+    updateOne: function(objColVals, x, cb) {
+        var queryString = "UPDATE burgers SET" + objToSql(objColVals) + "WHERE" + x;
         console.log(queryString);
-        connection.query(queryString, x, function(err, result) {
+        connection.query(queryString, function(err, result) {
             if (err) {throw err};
             cb(result);
         });
