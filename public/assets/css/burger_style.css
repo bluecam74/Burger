@@ -1,0 +1,42 @@
+body {
+    background-color: #5BC0EB;
+  };
+  
+#topper {
+    color: #E1DD8F !important;
+}
+
+.burg {
+    width: 300px;
+    margin-bottom: 20px;
+
+}
+
+.burg-name {
+    border: #8E3B46;
+    margin: 15px;
+    font-weight: bold; 
+    font-size: 20px;   
+}
+
+h2 {
+    margin: 10px;
+    text-decoration: underline;
+
+}
+
+.first {
+    padding: 20px;
+}
+
+.dev {
+    margin-bottom: 20px;
+}
+
+.add {
+    margin-bottom: 20px;
+}
+
+input {
+    margin: 10px;
+}
