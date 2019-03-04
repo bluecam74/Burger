@@ -46,7 +46,8 @@ var orm = {
         });
     },
     updateOne: function(objColVals, x, cb) {
-        var queryString = "UPDATE burgers SET" + objToSql(objColVals) + "WHERE" + x;
+      console.log("X: ", x);
+        var queryString = "UPDATE burgers SET " + objToSql(objColVals) + " WHERE " + x + ";";
         console.log(queryString);
         connection.query(queryString, function(err, result) {
             if (err) {throw err};

@@ -6,7 +6,7 @@
   {{#each burgers}}
   {{#unless devoured}}
   <p>{{burger_name}}</p>
-  <form class="pull-right" action="/{{this.id}}?_method=PUT" method="POST">
+  <form class="pull-right" action="/{{id}}?_method=PUT" " method="POST">
     <input type="hidden" name="devoured" value="true">
     <button class="btn btn-default btn-danger" type="submit">Eat!</button>
   </form>
