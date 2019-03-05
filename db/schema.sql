@@ -1,11 +1,8 @@
-USE testdb;
-CREATE TABLE userLog(
+CREATE DATABASE burger_db;
+USE burger_db;
+CREATE TABLE burgers(
     id INTEGER AUTO_INCREMENT NOT NULL,
-    user_name VARCHAR (100) NOT NULL, 
-    email  VARCHAR (150) NOT NULL, 
+    burger_name VARCHAR (100) NOT NULL, 
+    devoured  BOOLEAN, 
     PRIMARY KEY (id)
 );
-
-INSERT INTO userLog (user_name, email) VALUES ("john smith", "johnsmith@gmail.com");
-INSERT INTO userLog (user_name, email) VALUES ("shawna brown", "shawnabrown@gmail.com");
-INSERT INTO userLog (user_name, email) VALUES ("jackie rockerfeller", "jackierockerfeller@gmail.com");
