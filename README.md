@@ -7,7 +7,7 @@
 
 This application demonstrates the use of API routing with CRUD methods. 
 
-![alt text][https://github.com/bluecam74/burger/master/public/assets/images/burger_scrnshot.png]
+<p align="center"><img src="./public/assets/images/burger_scrnshot.png" alt="Burger Preview" width="650"></p>
 
 
 ### Technologies Used
