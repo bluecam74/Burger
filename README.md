@@ -1,5 +1,7 @@
 # Eat-Da-Burger App
 
+_Full Stack Application_
+
 #### Heroku App Link:
 * https://burger-app-1-bluecam.herokuapp.com/
 
