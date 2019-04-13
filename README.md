@@ -1,10 +1,13 @@
 # Eat-Da-Burger App
 
-Heroku App Link: [https://burger-app-1-bluecam.herokuapp.com/]
+#### Heroku App Link:
+* https://burger-app-1-bluecam.herokuapp.com/
 
 ### About
 
 This application demonstrates the use of API routing with CRUD methods. 
+
+![alt text][https://github.com/bluecam74/burger/master/public/assets/images/burger_scrnshot.png]
 
 
 ### Technologies Used
